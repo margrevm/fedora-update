@@ -50,6 +50,19 @@ if command -v flatpak >/dev/null 2>&1; then
 fi
 
 # ---------------------------------------------------
+# Firmware updates
+# ---------------------------------------------------
+if command -v fwupdmgr >/dev/null 2>&1; then
+    log_section "Updating firmware"
+
+    log_step "Refreshing firmware metadata..."
+    sudo fwupdmgr refresh
+
+    log_step "Applying firmware updates..."
+    sudo fwupdmgr update
+fi
+
+# ---------------------------------------------------
 # Other
 # ---------------------------------------------------
 #log_section "Updating other packages"
