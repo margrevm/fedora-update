@@ -18,4 +18,4 @@ chmod +x up.sh
 
 ## Credits
 
-By Mike Margreve (mike.margreve@outlook.com) and licensed under MIT. The original source can be found here: https://github.com/margrevm/fedora-update
+By Mike Margreve and licensed under MIT. The original source can be found here: <https://github.com/margrevm/fedora-update>
