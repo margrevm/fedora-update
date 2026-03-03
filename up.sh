@@ -43,10 +43,10 @@ if command -v flatpak >/dev/null 2>&1; then
     log_section "Updating flatpak packages"
 
     log_step "Upgrading flatpak packages to their latest version..."
-    flatpak update
+    flatpak update -y
 
     log_step "Remove unused flatpak packages..."
-    flatpak uninstall --unused
+    flatpak uninstall --unused -y
 fi
 
 # ---------------------------------------------------
